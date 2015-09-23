@@ -3,8 +3,8 @@ package com.xxzzsoftware.hosts.editor.ui;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.xxzzsoftware.hosts.editor.HostsEditorApplication;
 import com.squareup.otto.Bus;
+import com.xxzzsoftware.hosts.editor.HostsEditorApplication;
 
 import javax.inject.Inject;
 
@@ -13,7 +13,8 @@ import javax.inject.Inject;
  */
 public abstract class BaseActivity extends SherlockFragmentActivity {
 
-    @Inject protected Bus mBus;
+    @Inject
+    protected Bus mBus;
 
     @Override
     protected void onCreate(Bundle state) {

@@ -5,8 +5,8 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.xxzzsoftware.hosts.editor.HostsEditorApplication;
 import com.squareup.otto.Bus;
+import com.xxzzsoftware.hosts.editor.HostsEditorApplication;
 
 import javax.inject.Inject;
 
@@ -15,7 +15,8 @@ import javax.inject.Inject;
  */
 public class BaseFragment extends SherlockFragment {
 
-    @Inject protected Bus mBus;
+    @Inject
+    protected Bus mBus;
 
     protected SherlockFragmentActivity mActivity;
     protected HostsEditorApplication mApp;

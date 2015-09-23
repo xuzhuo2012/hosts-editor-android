@@ -19,8 +19,6 @@ import butterknife.InjectView;
 
 /**
  * Custom component that implements the Checkable interface.
- *
- * @see "http://www.marvinlabs.com/2010/10/29/custom-listview-ability-check-items/"
  */
 public class CheckableHostItem extends RelativeLayout implements Checkable {
 
