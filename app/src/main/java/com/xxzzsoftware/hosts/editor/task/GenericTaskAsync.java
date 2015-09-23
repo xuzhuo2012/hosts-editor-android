@@ -3,11 +3,11 @@ package com.xxzzsoftware.hosts.editor.task;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import com.squareup.otto.Bus;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.core.HostsManager;
 import com.xxzzsoftware.hosts.editor.event.LoadingEvent;
 import com.xxzzsoftware.hosts.editor.event.TaskCompletedEvent;
-import com.squareup.otto.Bus;
 
 import javax.inject.Inject;
 
@@ -15,8 +15,10 @@ import timber.log.Timber;
 
 public abstract class GenericTaskAsync extends AsyncTask<Host, Void, Void> {
 
-    @Inject Bus mBus;
-    @Inject HostsManager mHostsManager;
+    @Inject
+    Bus mBus;
+    @Inject
+    HostsManager mHostsManager;
 
     private Context mAppContext;
     protected boolean mFlagLoadingMsg; // which loading message (between 2) to display: (singular/plural) - (add/edit).

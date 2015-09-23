@@ -2,12 +2,12 @@ package com.xxzzsoftware.hosts.editor.task;
 
 import android.os.AsyncTask;
 
-import com.nilhcem.hostseditor.R;
+import com.squareup.otto.Bus;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.core.HostsManager;
 import com.xxzzsoftware.hosts.editor.event.LoadingEvent;
 import com.xxzzsoftware.hosts.editor.event.RefreshHostsEvent;
-import com.squareup.otto.Bus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +19,10 @@ import javax.inject.Inject;
  */
 public class ListHostsAsync extends AsyncTask<Boolean, Void, List<Host>> {
 
-    @Inject Bus mBus;
-    @Inject HostsManager mHostsManager;
+    @Inject
+    Bus mBus;
+    @Inject
+    HostsManager mHostsManager;
 
     @Override
     protected void onPreExecute() {

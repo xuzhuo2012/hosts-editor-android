@@ -13,14 +13,14 @@ import android.widget.TextView;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
-import com.nilhcem.hostseditor.R;
+import com.squareup.otto.Subscribe;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.event.LoadingEvent;
 import com.xxzzsoftware.hosts.editor.event.StartAddEditActivityEvent;
 import com.xxzzsoftware.hosts.editor.ui.BaseActivity;
 import com.xxzzsoftware.hosts.editor.ui.about.AboutDialogFragment;
 import com.xxzzsoftware.hosts.editor.ui.addedit.AddEditHostActivity;
-import com.squareup.otto.Subscribe;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -34,8 +34,10 @@ public class ListHostsActivity extends BaseActivity {
     private static final String INSTANCE_STATE_LOADING_MESSAGE = "loadingMessage";
     private static final String INSTANCE_STATE_SEARCH = "search";
 
-    @InjectView(R.id.listLoading) ProgressBar mProgressBar;
-    @InjectView(R.id.listLoadingMsg) TextView mLoadingMsg;
+    @InjectView(R.id.listLoading)
+    ProgressBar mProgressBar;
+    @InjectView(R.id.listLoadingMsg)
+    TextView mLoadingMsg;
 
     private ListHostsFragment mFragment;
     private String mSearchQuery = STR_EMPTY;

@@ -2,7 +2,8 @@ package com.xxzzsoftware.hosts.editor.core.util;
 
 import android.os.Looper;
 
-import com.nilhcem.hostseditor.BuildConfig;
+import com.xxzzsoftware.hosts.editor.BuildConfig;
+
 
 public final class ThreadPreconditions {
 

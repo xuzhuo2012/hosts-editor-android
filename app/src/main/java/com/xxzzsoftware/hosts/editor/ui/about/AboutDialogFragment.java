@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
-import com.nilhcem.hostseditor.R;
+import com.xxzzsoftware.hosts.editor.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

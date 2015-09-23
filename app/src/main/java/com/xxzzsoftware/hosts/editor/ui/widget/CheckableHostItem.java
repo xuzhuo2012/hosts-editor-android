@@ -9,7 +9,7 @@ import android.widget.Checkable;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nilhcem.hostseditor.R;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 
 import java.util.Locale;
@@ -24,10 +24,14 @@ import butterknife.InjectView;
  */
 public class CheckableHostItem extends RelativeLayout implements Checkable {
 
-    @InjectView(R.id.hostItemIp) TextView mIp;
-    @InjectView(R.id.hostItemHostname) TextView mHostname;
-    @InjectView(R.id.hostItemComment) TextView mComment;
-    @InjectView(R.id.hostItemCheckbox) InertCheckBox mCheckbox;
+    @InjectView(R.id.hostItemIp)
+    TextView mIp;
+    @InjectView(R.id.hostItemHostname)
+    TextView mHostname;
+    @InjectView(R.id.hostItemComment)
+    TextView mComment;
+    @InjectView(R.id.hostItemCheckbox)
+    InertCheckBox mCheckbox;
 
     private int mTextColor;
     private int mCommentColor;

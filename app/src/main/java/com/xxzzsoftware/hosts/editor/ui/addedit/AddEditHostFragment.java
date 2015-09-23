@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.nilhcem.hostseditor.R;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.core.util.InetAddresses;
 import com.xxzzsoftware.hosts.editor.event.CreatedHostEvent;
@@ -33,11 +33,16 @@ public class AddEditHostFragment extends BaseFragment {
     private Host mInitialHost; // "edit mode" only - null for "add mode"
     private AlertDialog mErrorAlert;
 
-    @InjectView(R.id.addEditHostIp) EditText mIp;
-    @InjectView(R.id.addEditHostName) EditText mHostName;
-    @InjectView(R.id.addEditComment) EditText mComment;
-    @InjectView(R.id.addEditCommentLabel) TextView mCommentLabel;
-    @InjectView(R.id.addEditHostButton) Button mButton;
+    @InjectView(R.id.addEditHostIp)
+    EditText mIp;
+    @InjectView(R.id.addEditHostName)
+    EditText mHostName;
+    @InjectView(R.id.addEditComment)
+    EditText mComment;
+    @InjectView(R.id.addEditCommentLabel)
+    TextView mCommentLabel;
+    @InjectView(R.id.addEditHostButton)
+    Button mButton;
 
     public static AddEditHostFragment newInstance(Host hostToEdit) {
         AddEditHostFragment fragment = new AddEditHostFragment();

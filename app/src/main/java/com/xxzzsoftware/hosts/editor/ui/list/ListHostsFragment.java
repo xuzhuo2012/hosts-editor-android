@@ -17,7 +17,8 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.nilhcem.hostseditor.R;
+import com.squareup.otto.Subscribe;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.event.LoadingEvent;
 import com.xxzzsoftware.hosts.editor.event.RefreshHostsEvent;
@@ -29,7 +30,6 @@ import com.xxzzsoftware.hosts.editor.task.ListHostsAsync;
 import com.xxzzsoftware.hosts.editor.task.RemoveHostsAsync;
 import com.xxzzsoftware.hosts.editor.task.ToggleHostsAsync;
 import com.xxzzsoftware.hosts.editor.ui.BaseFragment;
-import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +43,10 @@ import timber.log.Timber;
 
 public class ListHostsFragment extends BaseFragment implements OnItemClickListener, OnItemLongClickListener {
 
-    @Inject ListHostsAdapter mAdapter;
-    @InjectView(R.id.listHosts) ListView mListView;
+    @Inject
+    ListHostsAdapter mAdapter;
+    @InjectView(R.id.listHosts)
+    ListView mListView;
 
     private ActionMode mMode;
     private MenuItem mEditMenuItem;

@@ -3,7 +3,6 @@ package com.xxzzsoftware.hosts.editor;
 import android.app.Application;
 import android.content.Context;
 
-import com.nilhcem.hostseditor.BuildConfig;
 
 import dagger.ObjectGraph;
 import timber.log.Timber;

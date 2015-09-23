@@ -1,6 +1,6 @@
 package com.xxzzsoftware.hosts.editor.task;
 
-import com.nilhcem.hostseditor.R;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 
 import java.util.List;

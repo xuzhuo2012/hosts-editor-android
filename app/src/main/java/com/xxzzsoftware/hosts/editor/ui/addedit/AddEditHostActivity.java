@@ -8,12 +8,12 @@ import android.support.v4.app.FragmentTransaction;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.nilhcem.hostseditor.R;
+import com.squareup.otto.Subscribe;
+import com.xxzzsoftware.hosts.editor.R;
 import com.xxzzsoftware.hosts.editor.core.Host;
 import com.xxzzsoftware.hosts.editor.event.CreatedHostEvent;
 import com.xxzzsoftware.hosts.editor.ui.BaseActivity;
 import com.xxzzsoftware.hosts.editor.ui.list.ListHostsActivity;
-import com.squareup.otto.Subscribe;
 
 public class AddEditHostActivity extends BaseActivity {
 

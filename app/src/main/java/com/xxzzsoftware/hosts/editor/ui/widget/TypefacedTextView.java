@@ -6,7 +6,8 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.nilhcem.hostseditor.R;
+import com.xxzzsoftware.hosts.editor.R;
+
 
 /**
  * TextView using a custom font.
