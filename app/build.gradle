@@ -39,7 +39,7 @@ dependencies {
 
     // ActionBarSherlock + Support library
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.android:support-v4:r7'
 
     // Butterknife
     compile 'com.jakewharton:butterknife:6.1.0'
